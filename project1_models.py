@@ -38,7 +38,7 @@ train_X, test_X, train_Y, test_Y = train_test_split(train_data, train_label, tes
                                    stratify=train_label, random_state=1000)
 
 
-
+# model
 clf = SVC(C=1.4, kernel="linear")
 #clf = LogisticRegression(C=1.0)
 clf.fit(train_X, train_Y)

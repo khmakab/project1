@@ -34,6 +34,7 @@ train_label = np.ravel(train_label)  # flatten the array for fitting
 
 
 
+# model
 clf = SVC(C=1.4, kernel="linear")
 #clf = LogisticRegression(C=1)
 clf.fit(train_data, train_label)
